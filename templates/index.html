@@ -1,0 +1,17 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Classifier</title>
+</head>
+<body>
+    <h1>Spam Classifier</h1>
+    <form method="post" action="/">
+        <label for="message">Enter your message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="60">{{ message }}</textarea><br><br>
+        <input type="submit" value="Classify">
+    </form>
+    {% if result %}
+    <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
